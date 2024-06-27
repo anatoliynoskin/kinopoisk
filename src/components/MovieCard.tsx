@@ -1,7 +1,6 @@
-import { Genres, Poster, Rating } from '../store/slices/movieSlice'
+import { Poster, Rating, Genres } from "../types"
 
 type Props = {
-  key: number,
   name: string,
   poster: Poster,
   description: string,
@@ -9,8 +8,8 @@ type Props = {
   genres: Genres,
 }
 
-export const MovieCard = ({key, name, poster, description, rating, genres}: Props) => {
+export const MovieCard = ({name, poster, description, rating, genres}: Props) => {
   return (
-    <div key={key}>{name}</div>
+    <div>{name}</div>
   )
 }

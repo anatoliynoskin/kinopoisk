@@ -1,15 +1,16 @@
 
-import { Movie } from '../store/slices/movieSlice'
+
+import { Movie } from '../types'
 import {MovieCard} from './MovieCard'
 
 type Props = {
-  movies: Movie[]
+  movies: Movie[] | undefined
 }
 
 const MovieList = ({movies}: Props) => {
   return (
     <>
-      {movies.map(movie => <MovieCard key={movie.id} name={movie.name} poster={movie.poster} description={movie.description} rating={movie.rating} genres={movie.genres}/>)}
+      {movies ? movies.map(movie => <MovieCard key={movie.id} name={movie.name} poster={movie.poster} description={movie.description} rating={movie.rating} genres={movie.genres}/>): 'empty'}
     </>
   )
 }

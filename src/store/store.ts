@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import movieReducer from './slices/movieSlice'
+import { kinopoiskApi } from './kinopoiskApi'
 
 export const store = configureStore({
   reducer: {
-    movie: movieReducer,
+    [kinopoiskApi.reducerPath]: kinopoiskApi.reducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(kinopoiskApi.middleware),
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
