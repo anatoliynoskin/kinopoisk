@@ -1,36 +1,48 @@
 export type Poster = {
-  url: string,
-  previewUrl: string,
+  url: string ,
+  previewUrl: string ,
 }
 
 export type Rating = {
-  "kp": number,
-  "imdb": number,
-  "filmCritics": number,
-  "russianFilmCritics": number,
+  kp?: number,
+  imdb?: number,
+  tmdb?: number,
+  filmCritics?: number,
+  russianFilmCritics?: number,
+  await?: number
 }
 
 export type Genre = {
-  name: "боевик" | "триллер" | "криминал",
+  name: string,
 }
 
-export type Genres = {
-  genres: Genre[],
+export type Premiere = {
+  country: string,
+  world: string,
+  russia: string,
+  digital: string,
+  cinema: string,
+  bluray: string,
+  dvd: string
 }
 
 export type Movie = {
   id: number,
-  name: string,
-  poster: Poster,
-  description: string,
+  name: string | null,
+  alternativeName: string | null,
+  poster?: Poster | null,
+  description: string | null,
+  shortDescription: string | null,
   rating: Rating,
-  genres: Genres
+  genres: Array<Genre>,
+  year: number,
+  premiere: Premiere
 }
 
 export type Data = {
   docs: Movie[],
-  "total": number,
-  "limit": number,
-  "page": number,
-  "pages": number
+  total: number,
+  limit: number,
+  page: number,
+  pages: number
 }

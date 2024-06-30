@@ -1,0 +1,16 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  padding: 20px 0;
+}
+.link{
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 600;
+  font-size: 20px;
+}
+.link:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+.container{
+  padding: 0 20px 20px 20px;
+}
+.flex{
+  display: flex;
+  gap: 20px;
+}
+.info{
+  padding: 20px;
+  font-family: 'Roboto';
+}
+.image{
+  max-width: 50%;
+}
+.mr_10{
+  display: inline-block;
+  margin-right: 10px;
+}
+.bold{
+  font-weight: 600;
+}
+.error{
+  font-weight: 600;
+  color: red;
+}
+.fs_20{
+  font-size: 20px;
+}
+.text_center{
+  text-align: center;
+}
+.message{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
