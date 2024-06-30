@@ -1,0 +1,21 @@
+.container{
+  width: 100%;
+  max-width: 250px;
+  padding: 30px;
+  padding-top: 40px;
+}
+.label{
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 18px;
+}
+.block{
+  margin-bottom: 10px;
+}
+.genres{
+  flex-direction: column;
+  flex-wrap: nowrap!important;
+  width: 250px;
+  height: 400px;
+  overflow-y: scroll;
+}

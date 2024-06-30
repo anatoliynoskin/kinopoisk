@@ -1,0 +1,32 @@
+.container{
+  padding: 0 20px 20px 20px;
+  font-family: 'Roboto';
+}
+.flex{
+  display: flex;
+}
+.pagination{
+  max-width: 400px;
+  margin: 20px auto;
+}
+.bold{
+  font-weight: 600;
+}
+.text_center{
+  text-align: center;
+}
+.error{
+  color: red;
+}
+.preloader{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}

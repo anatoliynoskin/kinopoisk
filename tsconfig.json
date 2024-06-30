@@ -1,5 +1,8 @@
 {
   "files": [],
+  "compilerOptions": {
+    "preserveSymlinks": true,
+  },
   "references": [
     {
       "path": "./tsconfig.app.json"
